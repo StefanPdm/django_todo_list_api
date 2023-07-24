@@ -15,3 +15,8 @@ class TodoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Todo
         fields = ['id', 'title', 'description', 'created_at', 'updated_at', 'completed', 'user']
+        
+class KonnektorSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Konnektor
+        fields = ['k_id', 'k_name', 'k_is_active', 'k_online_since', 'k_firmware_version', 'k_update_available']

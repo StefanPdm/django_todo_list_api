@@ -7,6 +7,7 @@ from todo.views import *
 
 router = routers.DefaultRouter()
 router.register(r'todos', TodoViewSet)
+router.register(r'konnektors', KonnektorViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
